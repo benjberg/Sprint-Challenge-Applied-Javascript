@@ -12,6 +12,7 @@ axios.get('https://lambda-times-backend.herokuapp.com/topics').then(response =>{
     response.data.topics.forEach(item =>{
          const NT = Topic(item);
         topics.append(NT);
+        
 
     });
 }).catch(error =>{
